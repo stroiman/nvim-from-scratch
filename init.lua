@@ -7,4 +7,4 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.keymap.set("n", "<leader>ve", ":tabnew $MYVIMRC<cr>", { desc = "Open neovim configuration file" })
 vim.keymap.set("n", "<leader>vs", reload, { desc = "Re-source neovim configuration file" })
-print('foo')
+vim.keymap.set("i", "jk", "<esc>", { desc = "Exit insert mode" })
