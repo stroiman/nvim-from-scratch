@@ -37,5 +37,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  "tpope/vim-fugitive"
+  "tpope/vim-fugitive",
+  "lewis6991/gitsigns.nvim"
 })
+
+require("gitsigns").setup()
